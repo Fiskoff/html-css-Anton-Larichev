@@ -24,23 +24,6 @@ form input:focus {
     color: #FFFFFF;
 }
 
-/* Псевдаклсс first-child - применяет свойства  для первого элемента в списке
-ul li:first-child {
-    color: red;
-}
-
-Псевдаклсс last-child -ет свойства  для последнего элемента в списке 
-ul li:last-child {
-    color: red;
-} 
-*/
-
-/* Псевдаклсс nth-child - опредеяет свойства для элемента в определённом месте  списка. odd - нечётные, even - чётные */
-/* Псевдаклсс nth-child(3n) - каждый 3-тий элемент. nth-child(2n - 1) - через один*/
-ul li:nth-child(odd) {
-    color: red;
-}
-
 
 .body_link {
     color: #4262FF;
@@ -90,20 +73,15 @@ header a {
     text-decoration: none;
 }
 
-/* Псевдоэлементы - специальные классы, позволяющие стелизовать часть элемента */
-/* Псевдоэлемент ::after - добавляет стилизацию и контент после элемента */
-a::after {
-    color: red;
-    content: "!";
-}
+.list_tools li {
+    /* list-style: none очищает все декорации списка */
+    list-style-type: none;
+    /* list-style-image: url() задаёт картинку списку, в место стандартной точки */
+    list-style-image: url('../images/Frame.svg');
+    color: rgba(5, 0, 56, 0.6);
+    font-family: 'Roboto' monospace;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
 
-/* Псевдоэлемент ::before - добавляет стилизацию и контент до элемента */
-a::before {
-    color: red;
-    content: "!";
-}
-
-/* Псевдоэлемент ::selection - определяет стиль выделения текста */
-*::selection  { 
-    background-color: #050038;
 }
