@@ -24,6 +24,24 @@ form input:focus {
     color: #FFFFFF;
 }
 
+/* Псевдаклсс first-child - применяет свойства  для первого элемента в списке
+ul li:first-child {
+    color: red;
+}
+
+Псевдаклсс last-child -ет свойства  для последнего элемента в списке 
+ul li:last-child {
+    color: red;
+} 
+*/
+
+/* Псевдаклсс nth-child - опредеяет свойства для элемента в определённом месте  списка. odd - нечётные, even - чётные */
+/* Псевдаклсс nth-child(3n) - каждый 3-тий элемент. nth-child(2n - 1) - через один*/
+ul li:nth-child(odd) {
+    color: red;
+}
+
+
 .body_link {
     color: #4262FF;
     font-family: 'Roboto' monospace;
