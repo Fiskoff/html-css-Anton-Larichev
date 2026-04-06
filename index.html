@@ -1,100 +1,70 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Таблицы</title>
+        <title>Формы</title>
     </head>
 
     <body>
         <main>
             <section>
-                <table> <!-- Таблица -->
-                    <tr> <!-- Строка -->
-                        <th></th><!-- Заголовок -->
-                    </tr>
-                    <tr>
-                        <td><!-- Столбец(ячейка) -->
-                            контент
-                        </td>
-                    </tr>
-                </table>
-            </section>
+                <form action="#">
+                    <div>
+                        <!-- label - строковый объект, текстовое поле -->
+                        <!-- input - создаёт строковый объект для ввода информации Насчитывает 22 модификации-->
+                        <!-- name - нужен для каждого поля которое будет обрабатывать форма, по этому полю будут передаваться значения на backend-->
+                        <label for="email">Ведите почту</label>
+                        <input type="email", placeholder="Email пользователя", id="email", name="email">
 
-            <section>
-                <table>
-                    <caption>Структура расходов</caption>
-                    <thead>
-                        <tr>
-                            <th rowspan="2">Статья</th>
-                            <th colspan="2">Сумма</th>
-                        </tr>
-                        <tr>
-                            <th>Рубли</th>
-                            <th>Доллары</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr> 
-                            <td>Зарплата</td>
-                            <td>100 000</td>
-                            <td>8 500</td>
-                        </tr>
-                        <tr> 
-                            <td>Сервисы</td>
-                            <td>30 000</td>
-                            <td>400</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <td>Итог</td>
-                        <td>130 000</td>
-                        <td>8900</td>
-                    </tfoot>
-                </table>
-            </section>
+                        <label for="password">Введите пароль</label>
+                        <input type="password", placeholder="Пароль пользователя", id="password", name="password">
 
-            <section>
-                <table>
-                    <caption>Таблица расходов и доходов</caption>
-                    <thead>
-                        <tr>
-                            <th>Год</th>
-                            <th colspan="2">2023</th>
-                            <th colspan="2">2024</th>
-                        </tr>
-                        <tr>
-                            <td>Полугодие</td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>1</td>
-                            <td>2</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Доход</td>
-                            <td>1500$</td>
-                            <td>1800$</td>
-                            <td>2000$</td>
-                            <td>3000$</td>
-                        </tr>
-                        <tr>
-                            <td>Расход</td>
-                            <td>-500$</td>
-                            <td>-600$</td>
-                            <td>-700$</td>
-                            <td>-1000$</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td>Итог</td>
-                            <td>1000$</td>
-                            <td>1200$</td>
-                            <td>1300$</td>
-                            <td>2000$</td>
-                        </tr>
-                    </tfoot>
-                </table>
+                        <label for="date">Введите дату рождения</label>
+                        <input type="date", placeholder="Дата рождения", id="date", name="date">
+
+                        <label for="text">Введите сообщение</label>
+                        <input type="text", placeholder="Текст пользователя", id="text", name="text">
+
+                        <button type="submit">Отправить</button>
+                        <button type="reset">Очистить форму</button>
+                        <button type="button">Просто кнопка для привязывания к какой-то логике</button>
+                    </div>
+            
+                    <div>
+                        <!-- Чекбокс выбираем или нет -->
+                        <label for="agree">Согласен с обработкой данных</label>
+                        <input type="checkbox" name="agree" id="agree">
+                    </div>
+
+                    <div>
+                        <!-- Группа чекбоксов выбираем только что-то одно -->
+                        <label for="1">Выбор 1</label>
+                        <input type="radio" name="choice" id="choice_1", value="1">
+                        <label for="2">Выбор 2</label>
+                        <input type="radio" name="choice" id="choice_2", value="2">
+                    </div>
+
+                    <div>
+                        <!-- Список -->
+                        <label for="select_choice">Выбор</label>
+                        <select name="select_choice" id="select_choice">
+                            <option value="1">Выбор1</option>
+                            <option value="2">Выбор2</option>
+                            <option value="3">выбор3</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <!-- Слайдер -->
+                        <label for="range_volume">Громкость</label>
+                        <input type="range" name="range_volume" id="range_volume">
+                    </div>
+
+                    <div>
+                        <!-- Многострочный ввод текста -->
+                        <label for="text_area">Текстовое поле</label>
+                        <textarea name="text_area" id="text_area"></textarea>
+                    </div>
+                 </form>
             </section>
         </main>
     </body>
