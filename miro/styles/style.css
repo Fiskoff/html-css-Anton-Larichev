@@ -7,6 +7,23 @@
     font-weight: 400;
 }
 
+/* Задача псевдакдасса выбрать элемент в определённом состоянии. Например для кнопки в момент нажатия */
+/* Псевдаклсс hover - наведение мыши на элемент */
+#hero_button:hover { 
+    background-color: #3126a8;
+}
+
+/* Псевдаклсс active - нажатие на кнопку */
+#hero_button:active {
+    background-color: #0f0b42;
+}
+
+/* Псевдаклсс focus - какое-то изменение при фокусе. В данном случает при выборе поля ввода */
+form input:focus {
+    background-color: #050038;
+    color: #FFFFFF;
+}
+
 .body_link {
     color: #4262FF;
     font-family: 'Roboto' monospace;
@@ -14,6 +31,10 @@
     font-weight: 400;
     /* Декорация текста, underline - подчёркивание */
     text-decoration: underline;
+}
+
+.body_link:hover {
+    color: #1b2a77;
 }
 
 h1, h2 {
