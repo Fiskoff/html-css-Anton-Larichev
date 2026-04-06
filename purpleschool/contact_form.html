@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма контактов</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+            <h1>Свяжитесь со мной</h1>
+            <form action="#", method="post">
+                <div>
+                    <img src="images/message.svg" alt="Иконка сообщения">
+                    <label for="email">E-mail</label>
+                    <input type="email", id="email", name="email", placeholder="Введите email">
+                </div>
+                <div>
+                    <img src="images/telegram.svg" alt="Иконка Телеграма">
+                    <label for="input_telegram">Telegram</label>
+                    <input type="text", id="input_telegram", name="input_telegram", placeholder="Введите Телеграм">
+                </div>
+                <div>
+                    <img src="images/topic.svg" alt="Иконка темы">
+                    <label for="text">Тема</label>
+                    <select id="topic", name="topic">
+                        <option value="1">Обучение</option>
+                        <option value="2">Оплата</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment", placeholder="Опишите вашу проблему"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Отправить</button>
+                </div>
+            </form>
+    </main>
+</body>
+</html>

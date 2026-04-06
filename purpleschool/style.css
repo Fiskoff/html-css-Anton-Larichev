@@ -1,0 +1,29 @@
+main{
+    background-color: #1E1F29;
+}
+
+h1{
+    color: #FAFAFA;
+    font-size: 36px;
+    font-weight: 400;
+    /* Fira Sans - основной шрифт, если он не загружен, то используется monospace */
+    font-family: 'Fira Sans', monospace;
+}
+
+div{
+    background-color: #2E2D3D;
+}
+
+label{
+    color: #AFB2BF;
+}
+
+input, select, textarea{
+    color: #FAFAFA;
+    background-color: #2E2D3D;
+}
+
+button{
+    color: #FAFAFA;
+    background-color: #6C38CC;
+}
