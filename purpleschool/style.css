@@ -1,9 +1,25 @@
-label{
-    /* Изменение цвета */
-    color: brown;
+main{
+    background-color: #1E1F29;
+}
+
+h1{
+    color: wheat;
 }
 
 div{
-    /* Цвет заднего фона */
-    background-color: green;
+    background-color: #2E2D3D;
+}
+
+label{
+    color: #AFB2BF;
+}
+
+input, select, textarea{
+    color: wheat;
+    background-color: #2E2D3D;
+}
+
+button{
+    color: wheat;
+    background-color: #6C38CC;
 }
