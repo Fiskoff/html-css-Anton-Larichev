@@ -24,7 +24,17 @@ input, select, textarea{
 }
 
 input[type="email"] {
-    background-color: #6C38CC;
+    background-color: #4e4c61;
+}
+
+/* Псевдакласс задающий стиль для не валидных полей */
+input:invalid{
+    background-color: #561212;
+}
+
+/* Псевдакласс задающий стиль для валидных полей */
+input:valid{
+    background-color: #0e7b26;
 }
 
 button{
