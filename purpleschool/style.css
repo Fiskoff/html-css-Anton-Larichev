@@ -23,6 +23,10 @@ input, select, textarea{
     background-color: #2E2D3D;
 }
 
+input[type="email"] {
+    background-color: #6C38CC;
+}
+
 button{
     color: #FAFAFA;
     background-color: #6C38CC;
