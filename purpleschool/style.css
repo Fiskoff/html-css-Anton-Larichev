@@ -1,0 +1,9 @@
+label{
+    /* Изменение цвета */
+    color: brown;
+}
+
+div{
+    /* Цвет заднего фона */
+    background-color: green;
+}
