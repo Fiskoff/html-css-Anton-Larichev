@@ -1,0 +1,8 @@
+/* Стилизация по id */
+#hero_button { 
+    background-color: #4262FF;
+    color: #FFFFFF;
+    font-family: 'Roboto' monospace;
+    font-size: 18px;
+    font-weight: 400;
+}

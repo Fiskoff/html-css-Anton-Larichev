@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miro</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header>
@@ -22,6 +23,12 @@
         <section>
             <h1>Место для командной работы</h1>
             <p>Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте</p>
+            <form action="/register" method="get">
+                <input type="email" id="input_email", name="email">
+                <!-- id - идентификатор элемента, должен быть уникальным. hero - так как кнопка является кнопкой-героем (ключевой элемент пользовательского интерфейса, обычно самый заметный и важный на странице или в разделе. Её основная цель — побудить пользователя к главному действию (например, регистрация, покупка, начало использования сервиса).) -->
+                <button type="submit" id="hero_button">Начать бесплатно</button>
+                <label for="input_email">Всегда бесплатно — кредитная карта не нужна</label>
+            </form>
             <img src="images/headerimage-without-text 1 (1).png" alt="Изображение экрана работы Miro">
         </section>
         
