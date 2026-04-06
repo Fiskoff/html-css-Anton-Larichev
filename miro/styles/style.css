@@ -74,14 +74,26 @@ header a {
 }
 
 .list_tools li {
-    /* list-style: none очищает все декорации списка */
-    list-style-type: none;
-    /* list-style-image: url() задаёт картинку списку, в место стандартной точки */
-    list-style-image: url('../images/Frame.svg');
+    /* В данном случае url заменяет стандартное значение на заданную картинку */
+    list-style: url('../images/Frame.svg');
     color: rgba(5, 0, 56, 0.6);
     font-family: 'Roboto' monospace;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
 
+}
+
+ .list_tools li { 
+    list-style: none;
+}
+
+/* ::before - стилизовать списки не рекомендуется из-за сдвига вёрстки. */
+.list_tools li::before { 
+    content: url('../images/Frame.svg');
+}
+
+/* ::marker - стиль для маркера списка */
+.list_tools li::marker { 
+    content: url('../images/Frame.svg');
 }
