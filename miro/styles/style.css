@@ -6,3 +6,12 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+.body_link {
+    color: #4262FF;
+    font-family: 'Roboto' monospace;
+    font-size: 18px;
+    font-weight: 400;
+    /* Декорация текста, underline - подчёркивание */
+    text-decoration: underline;
+}
