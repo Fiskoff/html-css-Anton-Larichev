@@ -125,33 +125,27 @@ header a {
 /* width - ширина элемента
 height - высота элемента*/
 .experiment {
-    background-color: #190ac7;
-    color: #FFFFFF;
-    width: 400px;
-    height: 200px;
-}
-
-.experiment_2  {
-    background-color: #190ac7;
+    background-color: #322b77;
     color: #FFFFFF;
     width: 400px;
     height: 200px;
 
-    /* ширина границы*/
-    border-width: 5px;
-    /* стиль границы, solid - сплошная линия(самый распространённый вариант)*/
-    border-style: solid;
-    /* цвет границы */
-    border-color: #050038;
+    /* внутренние отступы */
 
-    /* border-width, style, color эквивалентны вот этой записи*/
-    border: 5px solid #050038;
-    /* left, right, top, bottom - стороны для более точной настройки*/
-    border-left: 10px solid red;
+    /* 
+    padding-left(right, top, bottom) отступы со всех сторон
+    padding-left: 10px;
+    */
 
-    /* content-box - ширина внутреннего элемента, границы отдельно */
-    /* border-box - ширина внутреннего элемента + границы */
-    box-sizing: border-box;
-    /* закругление */
-    border-radius: 30px;
+    /*
+    padding: 10px - 10 пикселей со всех сторон
+    padding: 10px 20px - 20 пикселей слева и справа? 10 пикселей сверху и снизу
+    padding: 10px 20px 50 px - 10 с верху, 20 по бокам, 50 снизу
+    */
+
+    /* верх, права, низ, лево */
+    padding: 10px 20px 50px 30px;
+    
+
+    
 }
