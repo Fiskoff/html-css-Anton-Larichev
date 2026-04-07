@@ -130,3 +130,28 @@ height - высота элемента*/
     width: 400px;
     height: 200px;
 }
+
+.experiment_2  {
+    background-color: #190ac7;
+    color: #FFFFFF;
+    width: 400px;
+    height: 200px;
+
+    /* ширина границы*/
+    border-width: 5px;
+    /* стиль границы, solid - сплошная линия(самый распространённый вариант)*/
+    border-style: solid;
+    /* цвет границы */
+    border-color: #050038;
+
+    /* border-width, style, color эквивалентны вот этой записи*/
+    border: 5px solid #050038;
+    /* left, right, top, bottom - стороны для более точной настройки*/
+    border-left: 10px solid red;
+
+    /* content-box - ширина внутреннего элемента, границы отдельно */
+    /* border-box - ширина внутреннего элемента + границы */
+    box-sizing: border-box;
+    /* закругление */
+    border-radius: 30px;
+}
