@@ -17,6 +17,9 @@ div:hover  -  0.1.1
  - Border - границы элемента
  - Margin - внешние отступы
  - Padding - внутренние отступы
+
+У любых блочных элементов ширина - максимальная ширина экрана, высота - высота по контенту
+
 */
 
 /* Стилизация по id */
@@ -117,4 +120,13 @@ header a {
 /* ::marker - стиль для маркера списка */
 .list_tools li::marker { 
     content: url('../images/Frame.svg');
+}
+
+/* width - ширина элемента
+height - высота элемента*/
+.experiment {
+    background-color: #190ac7;
+    color: #FFFFFF;
+    width: 400px;
+    height: 200px;
 }
