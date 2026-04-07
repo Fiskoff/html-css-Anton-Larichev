@@ -1,28 +1,3 @@
-/* Каскад это - применение стилей на основании их положения, специфичности и состояния 
-
-Порядок применения стилей. Применяется самый последний, который применится к данному элементу
-Веса: селектор по классу более специфичен чем селектор по тегу. Стилизация по обычному тегу находится в приоритете ниже чем по классу
-Веc правила:
-div  - 0.0.1
-.class  -  0.1.0
-div .class  -  0.1.1
-div:hover  -  0.1.1
-#id   - 1.0.0
-
-Наследование - наследование стиля от родителя. Стиль верхних элементов распространяется на стиль вложенных элементов
-
-Блочная модель - это правила, по которым браузер определяет размер элемента на странице, его ширину и высоту
-Составляющие:
- - Content box - ширина и высота элемента
- - Border - границы элемента
- - Margin - внешние отступы
- - Padding - внутренние отступы
-
-У любых блочных элементов ширина - максимальная ширина экрана, высота - высота по контенту
-
-*/
-
-/* Стилизация по id */
 #hero_button { 
     background-color: #4262FF;
     color: #FFFFFF;
@@ -31,35 +6,12 @@ div:hover  -  0.1.1
     font-weight: 400;
 }
 
-/* Задача псевдакдасса выбрать элемент в определённом состоянии. Например для кнопки в момент нажатия */
-/* Псевдаклсс hover - наведение мыши на элемент */
-#hero_button:hover { 
-    background-color: #3126a8;
-}
-
-/* Псевдаклсс active - нажатие на кнопку */
-#hero_button:active {
-    background-color: #0f0b42;
-}
-
-/* Псевдаклсс focus - какое-то изменение при фокусе. В данном случает при выборе поля ввода */
-form input:focus {
-    background-color: #050038;
-    color: #FFFFFF;
-}
-
-
 .body_link {
     color: #4262FF;
     font-family: 'Roboto' monospace;
     font-size: 18px;
     font-weight: 400;
-    /* Декорация текста, underline - подчёркивание */
     text-decoration: underline;
-}
-
-.body_link:hover {
-    color: #1b2a77;
 }
 
 h1, h2 {
@@ -67,7 +19,6 @@ h1, h2 {
     font-family: 'Roboto' monospace;
     font-size: 48px;
     font-weight: 400;
-    /* Определяет высоту линии текста. Задаёт вертикальное пространство между строками */
     line-height: 56px;
 }
 
@@ -86,20 +37,17 @@ p {
     color: rgba(5, 0, 56, 0.6);
 }
 
-/* Стиль для всех дочерних элементов объекта header*/
 header a {
     font-family: 'Roboto' monospace;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: rgba(5, 0, 56, 1);
-    /* Убирает всё дополнительное оформление. В данном случае - подчеркивание ссылки */
     text-decoration: none;
 }
 
 .list_tools li {
-    /* В данном случае url заменяет стандартное значение на заданную картинку */
-    list-style: url('../images/Frame.svg');
+    list-style: none;
     color: rgba(5, 0, 56, 0.6);
     font-family: 'Roboto' monospace;
     font-size: 18px;
@@ -108,41 +56,6 @@ header a {
 
 }
 
- .list_tools li { 
-    list-style: none;
-}
-
-/* ::before - стилизовать списки не рекомендуется из-за сдвига вёрстки. */
-.list_tools li::before { 
-    content: url('../images/Frame.svg');
-}
-
-/* ::marker - стиль для маркера списка */
 .list_tools li::marker { 
     content: url('../images/Frame.svg');
-}
-
-/* width - ширина элемента
-height - высота элемента*/
-.experiment {
-    background-color: #322b77;
-    color: #FFFFFF;
-    width: 400px;
-    height: 200px;
-
-    /* внешние отступы - позволяют делать отступы между элементами */
-
-    /* 
-    margin-left(right, top, bottom) отступы со всех сторон
-    margin-left: 10px;
-    */
-
-    /*
-    margin: 10px - 10 пикселей со всех сторон
-    margin: 10px 20px - 20 пикселей слева и справа? 10 пикселей сверху и снизу
-    margin: 10px 20px 50 px - 10 с верху, 20 по бокам, 50 снизу
-    */
-
-    /* верх, права, низ, лево */
-    margin: 10px 20px 50px 30px;
 }
