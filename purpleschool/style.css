@@ -1,43 +1,67 @@
-main{
+body {
+    font-family: 'Fira Sans', monospace;
+    margin: 0;
     background-color: #1E1F29;
+    color: #FAFAFA;
+}
+
+main { 
+    height: 600px;
+    width: 800px;
 }
 
 h1{
-    color: #FAFAFA;
+    text-align: center;
     font-size: 36px;
     font-weight: 400;
-    /* Fira Sans - основной шрифт, если он не загружен, то используется monospace */
-    font-family: 'Fira Sans', monospace;
+    margin: 48px 0 32px 0;
 }
 
 div{
     background-color: #2E2D3D;
+    margin: 0 48px 16px;
+    width: 700px;
+    height: 60px;
+    border-radius: 10px;
 }
 
-label{
-    color: #AFB2BF;
+img {
+    padding: 17px 8px 17px 16px;
 }
 
 input, select, textarea{
-    color: #FAFAFA;
     background-color: #2E2D3D;
-}
-
-input[type="email"] {
-    background-color: #4e4c61;
-}
-
-/* Псевдакласс задающий стиль для не валидных полей */
-input:invalid{
-    background-color: #561212;
-}
-
-/* Псевдакласс задающий стиль для валидных полей */
-input:valid{
-    background-color: #0e7b26;
-}
-
-button{
     color: #FAFAFA;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    
+}
+
+label {
+    color: #AFB2BF;
+    display: inline-block;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 120%;
+
+}
+
+#div_btn {
+    width: 700px;
+    height: 46px;
+}
+
+#div_btn button{
     background-color: #6C38CC;
+    border: 0px;
+    border-radius: 10px;
+    padding: 12px 24px 12px 24px;
+    color: #FAFAFA;
+    width: 700px;
+    height: 46px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
 }
