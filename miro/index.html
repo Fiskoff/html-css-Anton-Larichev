@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Дочернии элементы - элементы, которые находятся внутри родительского элемента -->
-    <!-- Дочернии элементы объекта header  - nav, ul, li -->
     <header>
         <nav>
             <ul>
@@ -25,13 +23,12 @@
         <section>
             <h1>Место для командной работы</h1>
             <p class="hero_text">Интерактивная онлайн-доска для совместной работы команд — в любое время, в любом месте</p>
-            <form action="/register" method="get">
+            <form action="/register" method="get" class="hero_form">
                 <input type="email" id="input_email", name="email">
-                <!-- id - идентификатор элемента, должен быть уникальным. hero - так как кнопка является кнопкой-героем (ключевой элемент пользовательского интерфейса, обычно самый заметный и важный на странице или в разделе. Её основная цель — побудить пользователя к главному действию (например, регистрация, покупка, начало использования сервиса).) -->
                 <button type="submit" id="hero_button">Начать бесплатно</button>
-                <label for="input_email">Всегда бесплатно — кредитная карта не нужна</label>
             </form>
-            <img src="images/headerimage-without-text 1 (1).png" alt="Изображение экрана работы Miro">
+            <p>Всегда бесплатно — кредитная карта не нужна</p>
+            <img src="images/headerimage-without-text 1 (1).png" alt="Изображение экрана работы Miro" id="hero_image">
         </section>
         
         <section>
@@ -40,7 +37,7 @@
             <a href="#" class="body_link">Узнать больше</a>
             <img src="images/IMAGE.png" alt="Работа с Miro с мобильных устройств">
         </section>
-        <!-- id предназначен для выбора одного и единственного конкретного элемента, то class  - это возможность объединить несколько элементов для общей стилизации -->
+
         <section>
             <img src="images/IMAGE (1).png" alt="Сервисы вокруг Miro">
             <h2>Закройте лишние вкладки — всё уже здесь</h2>
@@ -55,10 +52,35 @@
                 <li>Проводите вовлекающие дизайн-воркшопы</li>
             </ul>
         </section>
+        <section class="static">
+            <div class="cl1">1</div>
+            <div class="cl2">2</div>
+            <div class="cl3">3</div>
+        </section>
+        <section class="relative">
+            <div class="cl1">1</div>
+            <div class="cl2">2</div>
+            <div class="cl3">3</div>
+        </section>
+        <section class="absolute">
+            <div class="cl1">1</div>
+            <div class="cl2">2</div>
+            <div class="cl3">3</div>
+        </section
+        <section class="fixed">
+            <div class="cl1">1</div>
+            <div class="cl2">2</div>
+            <div class="cl3">3</div>
+        </section
+        <section class="sticky">
+            <div class="cl1">1</div>
+            <div class="cl2">2</div>
+            <div class="cl3">3</div>
+        </section
     </main>
 
     <footer>
-        <div>
+        <div id="miro">
             © 2023 Miro
         </div>
         <div>

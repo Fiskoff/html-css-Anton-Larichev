@@ -1,49 +1,50 @@
-/* Стилизация по id */
+/* Убираем общий отступ body */
+body { 
+    margin: 0;
+}
+
 #hero_button { 
     background-color: #4262FF;
     color: #FFFFFF;
     font-family: 'Roboto' monospace;
     font-size: 18px;
     font-weight: 400;
+    border-radius: 32px;
+    border: 1px solid #4262FF;
+    margin: 0 0 8px 0;
+    height: 51px;
+    padding: 10 20px;
 }
 
-/* Задача псевдакдасса выбрать элемент в определённом состоянии. Например для кнопки в момент нажатия */
-/* Псевдаклсс hover - наведение мыши на элемент */
-#hero_button:hover { 
-    background-color: #3126a8;
+#input_email {
+    border: 1px solid #9B99AF;
+    border-radius: 32px;
+    height: 38px;
+    
 }
-
-/* Псевдаклсс active - нажатие на кнопку */
-#hero_button:active {
-    background-color: #0f0b42;
-}
-
-/* Псевдаклсс focus - какое-то изменение при фокусе. В данном случает при выборе поля ввода */
-form input:focus {
-    background-color: #050038;
-    color: #FFFFFF;
-}
-
 
 .body_link {
     color: #4262FF;
     font-family: 'Roboto' monospace;
     font-size: 18px;
     font-weight: 400;
-    /* Декорация текста, underline - подчёркивание */
     text-decoration: underline;
 }
 
-.body_link:hover {
-    color: #1b2a77;
+h1 {
+    margin: 0 0 17px 0;
+    /* Позиционирование текста внутри блока */
+    text-align: center;
 }
 
+h2 {
+    margin: 0 0 19px 0;
+}
 h1, h2 {
     color: #050038;
     font-family: 'Roboto' monospace;
     font-size: 48px;
     font-weight: 400;
-    /* Определяет высоту линии текста. Задаёт вертикальное пространство между строками */
     line-height: 56px;
 }
 
@@ -56,26 +57,25 @@ p {
 
 .hero_text {
     color: #050038;
+    margin: 0 0 55px 0;
 }
 
 .section_text {
     color: rgba(5, 0, 56, 0.6);
+    margin: 0 0 40px 0;
 }
 
-/* Стиль для всех дочерних элементов объекта header*/
 header a {
     font-family: 'Roboto' monospace;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: rgba(5, 0, 56, 1);
-    /* Убирает всё дополнительное оформление. В данном случае - подчеркивание ссылки */
     text-decoration: none;
 }
 
 .list_tools li {
-    /* В данном случае url заменяет стандартное значение на заданную картинку */
-    list-style: url('../images/Frame.svg');
+    list-style: none;
     color: rgba(5, 0, 56, 0.6);
     font-family: 'Roboto' monospace;
     font-size: 18px;
@@ -84,16 +84,67 @@ header a {
 
 }
 
- .list_tools li { 
-    list-style: none;
-}
-
-/* ::before - стилизовать списки не рекомендуется из-за сдвига вёрстки. */
-.list_tools li::before { 
-    content: url('../images/Frame.svg');
-}
-
-/* ::marker - стиль для маркера списка */
 .list_tools li::marker { 
     content: url('../images/Frame.svg');
+}
+
+nav {
+    padding: 33px 50px;
+    border-bottom: 1px solid #F0F0F0;
+    margin-bottom: 60px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.hero_form + p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #050038;
+    margin-bottom: 8px 0 52px 0;
+    ;
+}
+
+footer {
+    height: 117px;
+    background-color: #050038;
+    color: #FFFFFF;
+    padding: 40px 46px;
+}
+
+footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    
+}
+
+.cl1 {
+    background-color: red;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.cl2 {
+    background-color: blue;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.cl3 {
+    background-color: green;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
 }
