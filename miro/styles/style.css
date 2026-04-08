@@ -155,4 +155,61 @@ footer a {
     display: block;
 }
 
-/* Display - позволяет регулировать отображение элементов. Строчные элементы можно сделать блочными и на оборот*/
+/* Position*/
+.cl1 {
+    background-color: red;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.cl2 {
+    background-color: blue;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.cl3 {
+    background-color: green;
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.static .cl2 {
+    position: static;
+}
+
+.relative .cl2 {
+    /* Благодаря этому свойству, мы можем задавать свойства top, left, right, bottom, можно задать положение элемента относительно его текущего места нахождения. */
+    position: relative;
+    /* Относительное позиционирование элемента, благодаря position: relative; */
+    top: 30px;
+}
+
+.absolute .cl2  {
+    /* Разница между position: relative; и position: absolute;
+    При position: relative; место в потоке сохраняется, а при position: absolute; место в потоке не сохраняется и его занимает другой элемент */
+    position: absolute;
+}
+
+.fixed .cl2  {
+    /* При position: fixed; элемент закрепляется на экране пользователя и перекрывает всё что за ним  */
+    position: fixed;
+    left: 50px;
+    top: 50px;
+}
+
+.sticky .cl2  {
+    /* При position: sticky; элемент при прокрутке страницы закрепляется на эране пользователя */
+    position: sticky;
+    left: 50px;
+    top: 50px;
+}
