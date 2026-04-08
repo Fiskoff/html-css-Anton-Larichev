@@ -1,10 +1,11 @@
-/* Убираем общий отступ body */
 body { 
     margin: 0;
 }
 
 #hero_button { 
     background-color: #4262FF;
+    /* Позволяет сделать переход */
+    transition: background-color 0.5s, border-radius 0.5s;
     color: #FFFFFF;
     font-family: 'Roboto' monospace;
     font-size: 18px;
@@ -14,6 +15,12 @@ body {
     margin: 0 0 8px 0;
     height: 51px;
     padding: 10 20px;
+}
+
+#hero_button:hover { 
+    background-color: #0c143d;
+    border-radius: 20%;
+
 }
 
 #input_email {
@@ -33,7 +40,6 @@ body {
 
 h1 {
     margin: 0 0 17px 0;
-    /* Позиционирование текста внутри блока */
     text-align: center;
 }
 
@@ -120,31 +126,4 @@ footer a {
     color: #FFFFFF;
     text-decoration: none;
     
-}
-
-.cl1 {
-    background-color: red;
-    display: inline-block;
-    padding: 20px;
-    margin: 20px;
-    width: 100px;
-    height: 100px;
-}
-
-.cl2 {
-    background-color: blue;
-    display: inline-block;
-    padding: 20px;
-    margin: 20px;
-    width: 100px;
-    height: 100px;
-}
-
-.cl3 {
-    background-color: green;
-    display: inline-block;
-    padding: 20px;
-    margin: 20px;
-    width: 100px;
-    height: 100px;
 }
