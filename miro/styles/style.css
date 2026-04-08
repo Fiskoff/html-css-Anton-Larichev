@@ -120,8 +120,39 @@ footer a {
     
 }
 
-/* Подход float, больше никогда не используется */
-#hero_image{
-    /* Обозначает, что мы вырывает этот объект из патока и отправляем его на право */
-    float: right; 
+.divR {
+    background-color: red;
+    /* Делает блочный элемент - строковым */
+    display: inline;
 }
+
+.divB {
+    background-color: blue;
+    /* Инлайн элементу нельзя задать ширину и высоту */
+    /* Инлайн блок - ведёт себя как строчный элемент, но при этом и как блочный элемент. Блочный элемент который располагается в строке */
+    display: inline-block;
+}
+
+.divG {
+    background-color: green;
+    /* скрывает элемент с страницы  */
+    display: none;
+}
+
+.spanR {
+    background-color: red;
+    /* Делает строковый элемент - блочным */
+    display: block;
+}
+
+.spanB {
+    background-color: blue;
+    display: block;
+}
+
+.spanG {
+    background-color: green;
+    display: block;
+}
+
+/* Display - позволяет регулировать отображение элементов. Строчные элементы можно сделать блочными и на оборот*/
