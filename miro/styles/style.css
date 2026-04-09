@@ -4,8 +4,6 @@ body {
 
 #hero_button { 
     background-color: #4262FF;
-    /* Позволяет сделать переход */
-    transition: background-color 0.5s, border-radius 0.5s;
     color: #FFFFFF;
     font-family: 'Roboto' monospace;
     font-size: 18px;
@@ -20,7 +18,6 @@ body {
 #hero_button:hover { 
     background-color: #0c143d;
     border-radius: 20%;
-
 }
 
 #input_email {
@@ -126,4 +123,24 @@ footer a {
     color: #FFFFFF;
     text-decoration: none;
     
+}
+
+
+/* Адаптивная вёрстка - обеспечить адаптацию контента для любой размер экрана */
+
+
+/* Пока величина дисплея больше 500px - применяем стиль */
+/* если дизайн под мобилку, то пользуемся min */
+@media (min-width: 500px) { 
+    h1 {
+        color: red;
+    }
+}
+
+/* Стиль применится если величина дисплея меньше 500px*/
+/* если дизайн под декстоп, то пользуемся max */
+@media (max-width: 500px) { 
+    h1 {
+        color: green;
+    }
 }
