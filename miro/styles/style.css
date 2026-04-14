@@ -1,5 +1,13 @@
+/* Подключение шрифтов */
+/* Использовать только, если шрифта нет в goggle fonts */
+@font-face { 
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto_SemiCondensed-Regular.ttf);
+}
+
 body { 
     margin: 0;
+    font-family: "Roboto";
 }
 
 #hero_button { 
@@ -69,7 +77,6 @@ p {
 }
 
 header a {
-    font-family: 'Roboto' monospace;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -80,7 +87,6 @@ header a {
 .list_tools li {
     list-style: none;
     color: rgba(5, 0, 56, 0.6);
-    font-family: 'Roboto' monospace;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -123,24 +129,4 @@ footer a {
     color: #FFFFFF;
     text-decoration: none;
     
-}
-
-
-/* Адаптивная вёрстка - обеспечить адаптацию контента для любой размер экрана */
-
-
-/* Пока величина дисплея больше 500px - применяем стиль */
-/* если дизайн под мобилку, то пользуемся min */
-@media (min-width: 500px) { 
-    h1 {
-        color: red;
-    }
-}
-
-/* Стиль применится если величина дисплея меньше 500px*/
-/* если дизайн под декстоп, то пользуемся max */
-@media (max-width: 500px) { 
-    h1 {
-        color: green;
-    }
 }
